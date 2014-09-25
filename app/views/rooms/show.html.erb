@@ -1,0 +1,23 @@
+<div class="room">
+	<h1><%= @room.name %> by <%= @room.user.email %><br>
+	<small><%= @room.description %></small></h1>
+	<br>
+	<div class="chat-box">
+		<% @room.comments.each do |f| %>
+			<b><%= f.user_id %></b>: <%= f.comment %>
+			<br><br>
+		<% end %>
+		</div>
+		<%= form_for @comment do |f| %>
+			<fieldset>
+				<div>
+
+					<%= f.label :comment %>
+					<%= f.text_field :comment %>
+					<%= f.hidden_field :room_id, value: @room.id %>
+					<%= f.submit "Submit" %>
+				</div>
+			</fieldset>
+		<% end %>
+
+</div>
