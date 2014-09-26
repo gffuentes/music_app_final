@@ -4,7 +4,7 @@
 	<br>
 	<div class="chat-box">
 		<% @room.comments.each do |f| %>
-			<b><%= f.user_id %></b>: <%= f.comment %>
+			<b><%= f.user.email %></b>: <%= f.comment %>
 			<br><br>
 		<% end %>
 		</div>

@@ -1,8 +1,10 @@
-<h1>Rooms <small font-size='20px'><%= link_to "+ Add New Room", new_room_path %></small></h1>
+<div class='index'>
+	<h1>Rooms <small font-size='20px'><%= link_to "+ Add New Room", new_room_path %></small></h1>
 
-<% @rooms.each do |f| %>
-	<div>
-		<h2><%= link_to f.name, f %> by <%= f.user.email %><br>
-		<small><%= f.description %></small></h2>
-	</div>
-<% end %>
+	<% @rooms.each do |f| %>
+		<div>
+			<h2><%= link_to f.name, f %> by <%= f.user.email %><br>
+			<small><%= f.description %></small></h2>
+		</div>
+	<% end %>
+</div>
