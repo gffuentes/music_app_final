@@ -3,7 +3,7 @@
   "description" : "chatrooms for music!",
   "version" : "0.0.1",
   "dependencies" : {
-    "socket.io" : "0.9.12",
-    "redis": "0.7.3"
+    "socket.io" : "1.1.0",
+    "redis": "2.8.7"
   }
 }
