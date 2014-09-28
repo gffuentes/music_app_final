@@ -1,0 +1,5 @@
+---
+port: 4443
+ssl: false
+environment: production
+rackup: cis_rails_chat.ru
