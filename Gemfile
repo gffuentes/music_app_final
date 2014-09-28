@@ -38,9 +38,6 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'devise'
-gem 'pg'
-gem 'redis'
-gem 'rails_12factor', group: :production
 group :development do
 	gem 'better_errors'
 	gem 'binding_of_caller'
