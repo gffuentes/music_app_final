@@ -5,6 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript" src="scripts/soundcloud.player.api.js"></script>
+	<script type="text/javascript">
+	   soundcloud.addEventListener('onPlayerReady', function(player, data) {
+	     player.api_play();
+	   });
+	</script>
 </head>
 <body>
 	<header>
@@ -19,6 +25,7 @@
 	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
 	<%= yield %>
-
+	<br><br>
+	<footer align="center">Thanks for listening!<br><br></footer>
 </body>
 </html>

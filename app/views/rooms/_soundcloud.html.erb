@@ -1,0 +1,7 @@
+<% require 'erb' %>
+
+<object height="81" width="100%" id="myPlayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+    <param name="movie" value="http://player.soundcloud.com/player.swf?&amp;download=false&amp;buying=false&amp;default_width=500&amp;auto_play=false&amp;url=<%= url_encode surl %>&amp;enable_api=true&amp;object_id=yourPlayerId"></param>
+    <param name="allowscriptaccess" value="always"></param>
+    <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?&amp;download=false&amp;buying=false&amp;default_width=500&amp;auto_play=false&amp;url=<%= url_encode surl %>&amp;enable_api=true&amp;object_id=yourPlayerId" type="application/x-shockwave-flash" width = '100%' name="myPlayer"></embed>
+  </object>

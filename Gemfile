@@ -39,9 +39,9 @@ gem 'spring',        group: :development
 
 gem 'devise'
 gem 'pg'
+gem 'soundcloud'
 
 group :development do
 	gem 'better_errors'
 	gem 'binding_of_caller'
 end
-

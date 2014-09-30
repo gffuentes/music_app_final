@@ -1,13 +1,21 @@
 Rails.application.routes.draw do
-  resources :rooms
-  resources :comments
   devise_for :users
 
-  # resources :rooms do
-  #   resources :comments
-  # end
-
-
+  resources :rooms do
+    resources :comments
+    resources :songs
+    resources :users
+  end
+  
+  resources :songs do
+    resources :users
+    resources :rooms
+  end
+  
+  resources :comments do
+    resources :users
+    resources :rooms
+  end
 
   
   #devise_for :users

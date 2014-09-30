@@ -21,5 +21,6 @@ class RoomsController < ApplicationController
 	def show
 		@room = Room.find params[:id]
 		@comment = Comment.new
+		@song = Song.new
 	end
 end
